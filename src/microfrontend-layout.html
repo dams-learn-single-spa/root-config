@@ -1,0 +1,40 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+
+  <main>
+    <nav style="z-index: 1000; position: fixed; left: 0; top: 0; width: 100vw">
+      <application name="@dams/micro-nav"></application>
+    </nav>
+
+    <div style="margin-top: 60px">
+      <route default>
+        <application name="@single-spa/welcome"></application>
+      </route>
+      <route path="micro-ng">
+        <application name="@dams/micro-ng"></application>
+      </route>
+      <route path="micro-react">
+        <application name="@dams/micro-react"></application>
+      </route>
+      <route path="micro-vue">
+        <application name="@dams/micro-vue"></application>
+      </route>
+    </div>
+  </main>
+</single-spa-router>

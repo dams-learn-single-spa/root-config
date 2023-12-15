@@ -1,0 +1,12 @@
+{
+  "imports": {
+    "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+    "react": "https://cdn.jsdelivr.net/npm/react@17.0.1/umd/react.production.min.js",
+    "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.1/umd/react-dom.production.min.js",
+    "@dams/root-config": "//localhost:9000/dams-root-config.js",
+    "@dams/micro-ng": "//localhost:4200/main.js",
+    "@dams/micro-nav": "//localhost:4000/main.js",
+    "@dams/micro-react": "http://localhost:8500/dams-micro-react.js",
+    "@dams/micro-vue": "http://localhost:8081/js/app.js"
+  }
+}
