@@ -19,7 +19,7 @@
 
   <main>
     <nav style="z-index: 1000; position: fixed; left: 0; top: 0; width: 100vw">
-      <application name="@dams/micro-nav"></application>
+      <application name="@dams/micro-nav" props="eventBus"></application>
     </nav>
 
     <div style="margin-top: 60px">
@@ -27,7 +27,7 @@
         <application name="@single-spa/welcome"></application>
       </route>
       <route path="micro-ng">
-        <application name="@dams/micro-ng"></application>
+        <application name="@dams/micro-ng" props="eventBus"></application>
       </route>
       <route path="micro-react">
         <application name="@dams/micro-react"></application>

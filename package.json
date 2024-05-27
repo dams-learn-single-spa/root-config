@@ -1,7 +1,7 @@
 {
   "name": "@dams/root-config",
   "scripts": {
-    "start": "webpack serve --port 9000 --env isLocal",
+    "start": "webpack serve --port 9002 --env isLocal",
     "lint": "eslint src --ext js,ts,tsx",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
     "format": "prettier --write .",
@@ -44,6 +44,7 @@
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
     "copy-webpack-plugin": "^11.0.0",
+    "rxjs": "^7.8.1",
     "single-spa": "^5.9.3",
     "single-spa-layout": "^1.6.0"
   },

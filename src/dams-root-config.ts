@@ -5,8 +5,18 @@ import {
   constructLayoutEngine,
 } from "single-spa-layout";
 import microfrontendLayout from "./microfrontend-layout.html";
+import { EventBusService } from "./event-bus";
+import { HTMLLayoutData } from "single-spa-layout/dist/types/isomorphic/constructRoutes";
 
-const routes = constructRoutes(microfrontendLayout);
+const data: HTMLLayoutData = {
+  loaders: {
+  },
+  props: {
+    eventBus: new EventBusService()
+  },
+};
+
+const routes = constructRoutes(microfrontendLayout, data);
 const applications = constructApplications({
   routes,
   loadApp({ name }) {
