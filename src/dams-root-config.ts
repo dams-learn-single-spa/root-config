@@ -12,7 +12,8 @@ const data: HTMLLayoutData = {
   loaders: {
   },
   props: {
-    eventBus: new EventBusService()
+    author: 'damski',
+    eventBus: new EventBusService(),
   },
 };
 

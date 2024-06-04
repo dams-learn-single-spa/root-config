@@ -22,7 +22,7 @@
       <application name="@dams/micro-nav" props="eventBus"></application>
     </nav>
 
-    <div style="margin-top: 60px">
+    <div style="padding-top: 100px">
       <route default>
         <application name="@single-spa/welcome"></application>
       </route>
@@ -30,10 +30,10 @@
         <application name="@dams/micro-ng" props="eventBus"></application>
       </route>
       <route path="micro-react">
-        <application name="@dams/micro-react"></application>
+        <application name="@dams/micro-react" props="author"></application>
       </route>
       <route path="micro-vue">
-        <application name="@dams/micro-vue"></application>
+        <application name="@dams/micro-vue" props="author, eventBus"></application>
       </route>
     </div>
   </main>
